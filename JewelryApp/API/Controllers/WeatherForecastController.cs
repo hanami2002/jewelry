@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -12,10 +13,14 @@ namespace API.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly AccountRepository _accountRepository;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+       
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, AccountRepository accountRepository)
         {
             _logger = logger;
+            _accountRepository = accountRepository;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -28,6 +33,16 @@ namespace API.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+        [HttpPost]
+        public async Task<IActionResult> SignUp([FromBody]SignUpModel model)
+        {
+            var result = await _accountRepository.SignUp(model);
+            if (result.Succeeded)
+            {
+                return Ok(result.Succeeded);
+            }
+            return Unauthorized();
         }
     }
 }

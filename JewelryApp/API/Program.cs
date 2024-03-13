@@ -1,8 +1,12 @@
 using Entities.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Repository;
 using System;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace API
 {
@@ -26,8 +30,26 @@ namespace API
             //add identity
             builder.Services
                 .AddIdentity<Account, IdentityRole>()
-                .AddEntityFrameworkStores<JewelryContext>();
-
+                .AddEntityFrameworkStores<JewelryContext>().AddDefaultTokenProviders();
+            builder.Services.AddScoped<AccountRepository>();
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.SaveToken=true;
+                options.RequireHttpsMetadata = false;
+                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = builder.Configuration["JWT:ValidAudience"],
+                    ValidIssuer= builder.Configuration["JWT:ValidIssuer"],
+                    IssuerSigningKey= new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
+                };
+            });
             builder.Services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequiredLength = 6;
