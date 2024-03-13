@@ -1,0 +1,16 @@
+D:\Code\C#\New folder\JewelryApp\Repository\bin\Debug\net6.0\Repository.deps.json
+D:\Code\C#\New folder\JewelryApp\Repository\bin\Debug\net6.0\Repository.dll
+D:\Code\C#\New folder\JewelryApp\Repository\bin\Debug\net6.0\Repository.pdb
+D:\Code\C#\New folder\JewelryApp\Repository\bin\Debug\net6.0\Entities.dll
+D:\Code\C#\New folder\JewelryApp\Repository\bin\Debug\net6.0\Entities.pdb
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.sourcelink.json
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.csproj.Up2Date
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.dll
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\refint\Repository.dll
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\Repository.pdb
+D:\Code\C#\New folder\JewelryApp\Repository\obj\Debug\net6.0\ref\Repository.dll
