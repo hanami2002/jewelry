@@ -134,7 +134,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Entities.csproj": {
+                "projectPath": "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -11,7 +11,7 @@ using System;
                 CheckLogs = new HashSet<CheckLog>();
                 Orders = new HashSet<Order>();
             }
-
+            public string? Fulllname { get; set; }
             public DateTime? Dob { get; set; }
             public string? Address { get; set; }
 

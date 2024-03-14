@@ -78,3 +78,5 @@ D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Entities.pdb
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Repository.pdb
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\DataTranferObject.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\DataTranferObject.pdb
