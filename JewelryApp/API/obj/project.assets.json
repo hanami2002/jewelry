@@ -1053,6 +1053,9 @@
       "DataTranferObject/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DataTranferObject.dll": {}
         },

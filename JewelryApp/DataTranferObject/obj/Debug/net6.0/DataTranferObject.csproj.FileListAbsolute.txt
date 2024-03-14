@@ -10,3 +10,7 @@ D:\Code\C#\New folder\JewelryApp\DataTranferObject\obj\Debug\net6.0\DataTranferO
 D:\Code\C#\New folder\JewelryApp\DataTranferObject\obj\Debug\net6.0\refint\DataTranferObject.dll
 D:\Code\C#\New folder\JewelryApp\DataTranferObject\obj\Debug\net6.0\DataTranferObject.pdb
 D:\Code\C#\New folder\JewelryApp\DataTranferObject\obj\Debug\net6.0\ref\DataTranferObject.dll
+D:\Code\C#\New folder\JewelryApp\DataTranferObject\bin\Debug\net6.0\Entities.dll
+D:\Code\C#\New folder\JewelryApp\DataTranferObject\bin\Debug\net6.0\Entities.pdb
+D:\Code\C#\New folder\JewelryApp\DataTranferObject\obj\Debug\net6.0\DataTranferObject.csproj.AssemblyReference.cache
+D:\Code\C#\New folder\JewelryApp\DataTranferObject\obj\Debug\net6.0\DataTran.6CC5B165.Up2Date
