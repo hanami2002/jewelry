@@ -3,8 +3,96 @@
   "WorkspaceRootPath": "D:\\Code\\C#\\New folder\\JewelryApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\paging\\pagingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\paging\\pagingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|d:\\code\\c#\\new folder\\jewelryapp\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|solutionrelative:api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|d:\\code\\c#\\new folder\\jewelryapp\\api\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|solutionrelative:api\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\accountdto\\signupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\accountdto\\signupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\accountdto\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\accountdto\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\accountdto\\accountresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\accountdto\\accountresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34805EBB-06F2-4133-ACD9-9E9E10AC40BE}|Services\\Services.csproj|d:\\code\\c#\\new folder\\jewelryapp\\services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34805EBB-06F2-4133-ACD9-9E9E10AC40BE}|Services\\Services.csproj|solutionrelative:services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|d:\\code\\c#\\new folder\\jewelryapp\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EFD455-811A-4111-8753-7EE7B0F8DD61}|Repository\\Repository.csproj|d:\\code\\c#\\new folder\\jewelryapp\\repository\\jewelrycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EFD455-811A-4111-8753-7EE7B0F8DD61}|Repository\\Repository.csproj|solutionrelative:repository\\jewelrycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\detaildto\\detailresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\detaildto\\detailresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\detaildto\\detailrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\detaildto\\detailrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0360D7D5-799C-4E83-95A9-1E63271170AE}|Entity\\Entities.csproj|d:\\code\\c#\\new folder\\jewelryapp\\entity\\models\\detail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0360D7D5-799C-4E83-95A9-1E63271170AE}|Entity\\Entities.csproj|solutionrelative:entity\\models\\detail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\checklogdto\\checklogresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\checklogdto\\checklogresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\checklogdto\\checklogrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\checklogdto\\checklogrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0360D7D5-799C-4E83-95A9-1E63271170AE}|Entity\\Entities.csproj|d:\\code\\c#\\new folder\\jewelryapp\\entity\\models\\checklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0360D7D5-799C-4E83-95A9-1E63271170AE}|Entity\\Entities.csproj|solutionrelative:entity\\models\\checklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\orderdto\\orderresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\orderdto\\orderresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\orderdto\\orderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\orderdto\\orderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\productdto\\productresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\productdto\\productresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\productdto\\productrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\productdto\\productrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\pricedto\\priceresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\pricedto\\priceresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\activitydto\\activityresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\activitydto\\activityresponedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|d:\\code\\c#\\new folder\\jewelryapp\\datatranferobject\\activitydto\\activityrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BB270C-EE6A-4118-9E58-970D13DEC766}|DataTranferObject\\DataTranferObject.csproj|solutionrelative:datatranferobject\\activitydto\\activityrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0360D7D5-799C-4E83-95A9-1E63271170AE}|Entity\\Entities.csproj|d:\\code\\c#\\new folder\\jewelryapp\\entity\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0360D7D5-799C-4E83-95A9-1E63271170AE}|Entity\\Entities.csproj|solutionrelative:entity\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0360D7D5-799C-4E83-95A9-1E63271170AE}|Entity\\Entities.csproj|d:\\code\\c#\\new folder\\jewelryapp\\entity\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +118,301 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Services\\Class1.cs",
+              "RelativeDocumentMoniker": "Services\\Class1.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Services\\Class1.cs",
+              "RelativeToolTip": "Services\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:11:11.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-18T04:09:19.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "API\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAowDAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:07:05.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PagingRequest.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\Paging\\PagingRequest.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\Paging\\PagingRequest.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\Paging\\PagingRequest.cs",
+              "RelativeToolTip": "DataTranferObject\\Paging\\PagingRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:03:34.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "API\\AccountRepository.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\AccountRepository.cs",
+              "RelativeToolTip": "API\\AccountRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:02:28.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JewelryContext.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Repository\\JewelryContext.cs",
+              "RelativeDocumentMoniker": "Repository\\JewelryContext.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Repository\\JewelryContext.cs",
+              "RelativeToolTip": "Repository\\JewelryContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:02:22.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DetailResponeDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\DetailDTO\\DetailResponeDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\DetailDTO\\DetailResponeDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\DetailDTO\\DetailResponeDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\DetailDTO\\DetailResponeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:01:49.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountResponeDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\AccountDTO\\AccountResponeDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\AccountDTO\\AccountResponeDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\AccountDTO\\AccountResponeDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\AccountDTO\\AccountResponeDTO.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:25:37.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SignUpModel.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\AccountDTO\\SignUpModel.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\AccountDTO\\SignUpModel.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\AccountDTO\\SignUpModel.cs",
+              "RelativeToolTip": "DataTranferObject\\AccountDTO\\SignUpModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:22:31.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignIn.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\AccountDTO\\SignIn.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\AccountDTO\\SignIn.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\AccountDTO\\SignIn.cs",
+              "RelativeToolTip": "DataTranferObject\\AccountDTO\\SignIn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:22:32.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DetailRequestDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\DetailDTO\\DetailRequestDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\DetailDTO\\DetailRequestDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\DetailDTO\\DetailRequestDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\DetailDTO\\DetailRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:01:35.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Detail.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Models\\Detail.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\Detail.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Models\\Detail.cs",
+              "RelativeToolTip": "Entity\\Models\\Detail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:01:15.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CheckLog.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Models\\CheckLog.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\CheckLog.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Models\\CheckLog.cs",
+              "RelativeToolTip": "Entity\\Models\\CheckLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:00:50.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CheckLogResponeDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ChecklogDTO\\CheckLogResponeDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\ChecklogDTO\\CheckLogResponeDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ChecklogDTO\\CheckLogResponeDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\ChecklogDTO\\CheckLogResponeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:00:39.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CheckLogRequestDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ChecklogDTO\\CheckLogRequestDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\ChecklogDTO\\CheckLogRequestDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ChecklogDTO\\CheckLogRequestDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\ChecklogDTO\\CheckLogRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T04:00:27.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderResponeDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\OrderDTO\\OrderResponeDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\OrderDTO\\OrderResponeDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\OrderDTO\\OrderResponeDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\OrderDTO\\OrderResponeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T03:59:22.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductResponeDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ProductDTO\\ProductResponeDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\ProductDTO\\ProductResponeDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ProductDTO\\ProductResponeDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\ProductDTO\\ProductResponeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:27:34.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ActivityResponeDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ActivityDTO\\ActivityResponeDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\ActivityDTO\\ActivityResponeDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ActivityDTO\\ActivityResponeDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\ActivityDTO\\ActivityResponeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:27:16.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ActivityRequestDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ActivityDTO\\ActivityRequestDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\ActivityDTO\\ActivityRequestDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ActivityDTO\\ActivityRequestDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\ActivityDTO\\ActivityRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:25:40.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductRequestDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ProductDTO\\ProductRequestDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\ProductDTO\\ProductRequestDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\ProductDTO\\ProductRequestDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\ProductDTO\\ProductRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:25:28.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\Product.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Models\\Product.cs",
+              "RelativeToolTip": "Entity\\Models\\Product.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:24:07.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderRequestDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\OrderDTO\\OrderRequestDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\OrderDTO\\OrderRequestDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\OrderDTO\\OrderRequestDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\OrderDTO\\OrderRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T02:28:15.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PriceResponeDTO.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\PriceDTO\\PriceResponeDTO.cs",
+              "RelativeDocumentMoniker": "DataTranferObject\\PriceDTO\\PriceResponeDTO.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\PriceDTO\\PriceResponeDTO.cs",
+              "RelativeToolTip": "DataTranferObject\\PriceDTO\\PriceResponeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:33:37.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Entity\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Entity\\Models\\Order.cs",
@@ -38,21 +420,7 @@
               "RelativeToolTip": "Entity\\Models\\Order.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T02:28:59.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderRequestDTO.cs",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\OrderDTO\\OrderRequestDTO.cs",
-              "RelativeDocumentMoniker": "DataTranferObject\\OrderDTO\\OrderRequestDTO.cs",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\DataTranferObject\\OrderDTO\\OrderRequestDTO.cs",
-              "RelativeToolTip": "DataTranferObject\\OrderDTO\\OrderRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T02:28:15.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T02:28:59.276Z"
             }
           ]
         }

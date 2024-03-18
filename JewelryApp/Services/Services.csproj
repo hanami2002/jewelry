@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataTranferObject\DataTranferObject.csproj" />
+    <ProjectReference Include="..\Entity\Entities.csproj" />
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+    <ProjectReference Include="..\Validation\Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AccountRepository\" />
+    <Folder Include="ActivityRepository\" />
+    <Folder Include="CategoryRepository\" />
+    <Folder Include="ChecklogRepository\" />
+    <Folder Include="DetailRepository\" />
+  </ItemGroup>
+
+</Project>

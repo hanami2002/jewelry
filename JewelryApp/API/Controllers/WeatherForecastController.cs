@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Repository;
 
 namespace API.Controllers
 {
@@ -14,13 +15,13 @@ namespace API.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly AccountRepository _accountRepository;
+        private readonly JewelryContext jewelryContext;
 
-       
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, AccountRepository accountRepository)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, AccountRepository accountRepository, JewelryContext jewelryContext)
         {
             _logger = logger;
             _accountRepository = accountRepository;
+            this.jewelryContext = jewelryContext;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -43,6 +44,12 @@ namespace API.Controllers
                 return Ok(result.Succeeded);
             }
             return Unauthorized();
+        }
+        [HttpGet("GetAll")]
+        public IActionResult IactionResult()
+        {
+            var list= jewelryContext.Products.ToList();
+            return Ok(list);
         }
     }
 }
