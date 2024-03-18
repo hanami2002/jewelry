@@ -1,0 +1,12 @@
+D:\Code\C#\New folder\JewelryApp\Validation\bin\Debug\net6.0\Utilities.deps.json
+D:\Code\C#\New folder\JewelryApp\Validation\bin\Debug\net6.0\Utilities.dll
+D:\Code\C#\New folder\JewelryApp\Validation\bin\Debug\net6.0\Utilities.pdb
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.AssemblyInfoInputs.cache
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.AssemblyInfo.cs
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.csproj.CoreCompileInputs.cache
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.sourcelink.json
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.dll
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\refint\Utilities.dll
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.pdb
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\ref\Utilities.dll
