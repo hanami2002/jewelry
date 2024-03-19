@@ -1,6 +1,10 @@
+using DataTranferObject.RoleDTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Repository;
+using Services.AccountRepository;
+using Services.ProductRepository;
 
 namespace API.Controllers
 {
@@ -15,16 +19,19 @@ namespace API.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly AccountRepository _accountRepository;
+        //private readonly IProductRepository _productRepository;
         private readonly JewelryContext jewelryContext;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, AccountRepository accountRepository, JewelryContext jewelryContext)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, AccountRepository accountRepository, JewelryContext jewelryContext /*ProductRepository productRepository*/)
         {
             _logger = logger;
             _accountRepository = accountRepository;
             this.jewelryContext = jewelryContext;
+            //_productRepository = productRepository;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
+        [Authorize(Roles = Role.Customer)]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -46,7 +53,8 @@ namespace API.Controllers
             return Unauthorized();
         }
         [HttpGet("GetAll")]
-        public IActionResult IactionResult()
+        [Authorize]
+        public IActionResult IactionResult(/*(string name*/)
         {
             var list= jewelryContext.Products.ToList();
             return Ok(list);

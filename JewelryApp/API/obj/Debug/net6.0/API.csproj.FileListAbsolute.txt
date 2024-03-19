@@ -80,3 +80,7 @@ D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authe
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\DataTranferObject.dll
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\DataTranferObject.pdb
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Services.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Utilities.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Services.pdb
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Utilities.pdb

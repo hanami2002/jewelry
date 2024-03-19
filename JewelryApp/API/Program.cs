@@ -4,9 +4,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Repository;
+using Services.AccountRepository;
+using Services.ProductRepository;
 using System;
 using System.Security.Cryptography;
 using System.Text;
+using API.Config;
 
 namespace API
 {
@@ -31,7 +34,7 @@ namespace API
             builder.Services
                 .AddIdentity<Account, IdentityRole>()
                 .AddEntityFrameworkStores<JewelryContext>().AddDefaultTokenProviders();
-            builder.Services.AddScoped<AccountRepository>();
+            builder.Services.Register();
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -47,8 +50,14 @@ namespace API
                     ValidateAudience = true,
                     ValidAudience = builder.Configuration["JWT:ValidAudience"],
                     ValidIssuer= builder.Configuration["JWT:ValidIssuer"],
-                    IssuerSigningKey= new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
+                    IssuerSigningKey= new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"])),
+                   
                 };
+                //options.TokenValidationParameters = new TokenValidationParameters
+                //{
+                ////    
+                //    CryptoProviderFactory = new CryptoProviderFactory { KeySizeValidator = KeySizeValidators.AllowAll }
+                //};
             });
             builder.Services.Configure<IdentityOptions>(options =>
             {
@@ -76,6 +85,7 @@ namespace API
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

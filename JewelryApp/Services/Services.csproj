@@ -14,11 +14,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AccountRepository\" />
     <Folder Include="ActivityRepository\" />
     <Folder Include="CategoryRepository\" />
     <Folder Include="ChecklogRepository\" />
     <Folder Include="DetailRepository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
   </ItemGroup>
 
 </Project>

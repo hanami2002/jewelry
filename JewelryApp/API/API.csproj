@@ -21,6 +21,8 @@
     <ProjectReference Include="..\DataTranferObject\DataTranferObject.csproj" />
     <ProjectReference Include="..\Entity\Entities.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+    <ProjectReference Include="..\Validation\Utilities.csproj" />
   </ItemGroup>
 
 </Project>
