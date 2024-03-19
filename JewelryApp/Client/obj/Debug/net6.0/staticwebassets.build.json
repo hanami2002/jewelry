@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TH0TZ2Jh/BJhhZIHdBjC5eI0g9JoN+oth3qErRK8COs=",
+  "Hash": "EEgkETPC8GRHMPWlTXHcILSQY0EJZG2kRHSA8DL99Uw=",
   "Source": "Client",
   "BasePath": "_content/Client",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\lib\\js\\site.js",
+      "SourceId": "Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\",
+      "BasePath": "_content/Client",
+      "RelativePath": "lib/js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\js\\site.js"
     }
   ]
 }
