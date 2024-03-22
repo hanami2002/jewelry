@@ -11,5 +11,6 @@ namespace DataTranferObject.ChecklogDTO
         public int LogId { get; set; }
         public string? Username { get; set; }
         public int? ActivityId { get; set; }
+        public string? Description { get; set; }
     }
 }

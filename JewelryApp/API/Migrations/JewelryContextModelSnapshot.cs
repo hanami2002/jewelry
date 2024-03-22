@@ -120,6 +120,12 @@ namespace API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"), 1L, 1);
 
+                    b.Property<bool?>("Enable")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -138,6 +144,9 @@ namespace API.Migrations
 
                     b.Property<int?>("ActivityId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
@@ -275,6 +284,9 @@ namespace API.Migrations
 
                     b.Property<string>("Detail")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool?>("Enable")
+                        .HasColumnType("bit");
 
                     b.Property<string>("ImageLink")
                         .HasColumnType("nvarchar(max)");

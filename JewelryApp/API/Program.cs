@@ -88,7 +88,7 @@ namespace API
             app.UseAuthentication();
             app.UseAuthorization();
 
-
+            app.UseCors("CORSPolicy");
             app.MapControllers();
 
             app.Run();

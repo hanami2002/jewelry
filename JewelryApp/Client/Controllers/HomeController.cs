@@ -8,6 +8,7 @@ namespace Client.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        public int? Id {  get; set; }
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -36,8 +37,13 @@ namespace Client.Controllers
         {
             return View();
         }
-        public IActionResult Detail()
+        public IActionResult Detail(int? id)
         {
+            if(id != null)
+            {
+                Id = id;
+            }
+            
             return View();
         }
         public IActionResult Contact()
@@ -45,6 +51,10 @@ namespace Client.Controllers
             return View();
         }
         public IActionResult Shop()
+        {
+            return View();
+        }
+        public IActionResult Price()
         {
             return View();
         }

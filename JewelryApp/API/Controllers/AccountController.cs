@@ -10,20 +10,20 @@ namespace API.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly AccountRepository _accountRepository;
+        private readonly IAccountRepository _accountRepository;
         //private readonly IProductRepository _productRepository;
         private readonly JewelryContext jewelryContext;
 
-        public AccountController(AccountRepository accountRepository, JewelryContext jewelryContext)
+        public AccountController(IAccountRepository accountRepository, JewelryContext jewelryContext)
         {
             _accountRepository = accountRepository;
             this.jewelryContext = jewelryContext;
         }
 
-     
+        
 
         [HttpPost("SignUp")]
-
+        
         public async Task<IActionResult> SignUp(SignUpModel signUpModel)
         {
             var result = await _accountRepository.SignUp(signUpModel);
@@ -39,19 +39,10 @@ namespace API.Controllers
         public async Task<IActionResult> SignIn(SignIn signInModel)
         {
             var result = await _accountRepository.SignIn(signInModel);
-            if (string.IsNullOrEmpty(result))
+            if (string.IsNullOrEmpty(result.Token))
             {
                 return Unauthorized();
             }
-            var cookieOptions = new CookieOptions
-            {
-                HttpOnly = true, 
-                Secure = true,
-                SameSite = SameSiteMode.Strict,
-                Expires = DateTime.UtcNow.AddDays(1) 
-            };
-
-            Response.Cookies.Append("user", result, cookieOptions);
             return Ok(result);
         }
     }

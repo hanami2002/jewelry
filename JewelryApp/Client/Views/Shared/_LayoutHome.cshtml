@@ -25,6 +25,37 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileModalLabel">Profile Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Form to edit profile information -->
+                    <form id="profileForm">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <!-- Add more fields as needed -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveProfile">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container-fluid">
             <div class="row bg-secondary py-2 px-xl-5">
@@ -60,7 +91,7 @@
             <div class="row align-items-center py-3 px-xl-5">
                 <div class="col-lg-3 d-none d-lg-block">
                     <a href="" class="text-decoration-none">
-                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">AHM</span>Jewelry Shop</h1>
                     </a>
                 </div>
                 <div class="col-lg-6 col-6 text-left">
@@ -95,32 +126,25 @@
                         <i class="fa fa-angle-down text-dark"></i>
                     </a>
                     <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
-                        <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div id="categoryList" class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+
                             
-                            <a href="" class="nav-item nav-link">Shirts</a>
-                            <a href="" class="nav-item nav-link">Jeans</a>
-                            <a href="" class="nav-item nav-link">Swimwear</a>
-                            <a href="" class="nav-item nav-link">Sleepwear</a>
-                            <a href="" class="nav-item nav-link">Sportswear</a>
-                            <a href="" class="nav-item nav-link">Jumpsuits</a>
-                            <a href="" class="nav-item nav-link">Blazers</a>
-                            <a href="" class="nav-item nav-link">Jackets</a>
-                            <a href="" class="nav-item nav-link">Shoes</a>
                         </div>
                     </nav>
                 </div>
                 <div class="col-lg-9">
                     <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                         <a href="" class="text-decoration-none d-block d-lg-none">
-                            <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                            <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">AHM</span>Jewelry Shopp</h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="https://localhost:7144/Home" class="nav-item nav-link active">Home</a>
                                 <a href="shop.html" class="nav-item nav-link">Shop</a>
+                                <a href="https://localhost:7144/Home/Price" class="nav-item nav-link">Price</a>
                                 <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -131,30 +155,34 @@
                                 </div>
                                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
-                            <div class="navbar-nav ml-auto py-0">
-                                <a href="" class="nav-item nav-link">Login</a>
-                                <a href="" class="nav-item nav-link">Register</a>
+                            <div id="access" class="navbar-nav ml-auto py-0 ">
+                                <a href="/Login" class="nav-item nav-link">Login</a>
+                                <a href="/SignUp" class="nav-item nav-link">Register</a>
+                            </div>
+                            <div style="display:none" id="account" class="navbar-nav ml-auto py-0 ">
+                                <a href="#" id="info" class="nav-item nav-link">HoangMinh</a>
+                                <a href="#" id="logout" class="nav-item nav-link">Log Out</a>
                             </div>
                         </div>
                     </nav>
                     <div id="header-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" style="height: 410px;">
-                                <img class="img-fluid" src="img/carousel-1.jpg" alt="Image">
+                                <img class="img-fluid" src="https://i.pinimg.com/originals/24/93/54/2493545d175c06d9f2d2c7df37679948.png" alt="Image">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
                                         <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
-                                        <h3 class="display-4 text-white font-weight-semi-bold mb-4">Fashionable Dress</h3>
+                                        <h3 class="display-4 text-white font-weight-semi-bold mb-4">Jewelry for both men and women</h3>
                                         <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item" style="height: 410px;">
-                                <img class="img-fluid" src="img/carousel-2.jpg" alt="Image">
+                                <img class="img-fluid" src="https://baublebible.com/wp-content/uploads/2019/07/1st-Banner-1425x802-gia-initial-necklace-1.jpg" alt="Image">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
                                         <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
-                                        <h3 class="display-4 text-white font-weight-semi-bold mb-4">Reasonable Price</h3>
+                                        <h3 class="display-4 text-white font-weight-semi-bold mb-4">Luxurious and noble</h3>
                                         <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
                                     </div>
                                 </div>
@@ -254,6 +282,112 @@
 
 
     <!-- JavaScript Libraries -->
+    <script>
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1, cookie.length);
+                }
+                if (cookie.indexOf(nameEQ) === 0) {
+                    return cookie.substring(nameEQ.length, cookie.length);
+                }
+            }
+            return null;
+        }
+        var isLoggedIn = false;
+        var token = getCookie("token");
+        console.log(token);
+        if (token != null) {
+            isLoggedIn = true;
+        }
+        // Lấy ra các phần tử cần thay đổi
+        var accessDiv = document.getElementById('access');
+        var accountDiv = document.getElementById('account');
+
+        // Kiểm tra trạng thái đăng nhập và hiển thị phần tử tương ứng
+        if (isLoggedIn) {
+            accessDiv.style.display = 'none'; // Ẩn phần tử chứa liên kết "Login" và "Register"
+            accountDiv.style.display = 'flex'; // Hiển thị phần tử chứa liên kết "Logout"
+            var jsonString = decodeURIComponent(token);
+            var data = JSON.parse(jsonString);
+            console.log(data);
+            document.getElementById('info').textContent = data.username;
+        
+        } else {
+            accessDiv.style.display = 'flex'; // Hiển thị phần tử chứa liên kết "Login" và "Register"
+            accountDiv.style.display = 'none'; // Ẩn phần tử chứa liên kết "Logout"
+        }
+
+        document.getElementById('logout').addEventListener('click', function (event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+
+            // Gọi hàm xóa cookie
+            deleteCookie('token');
+            location.reload();
+
+            // Redirect hoặc thực hiện các hành động khác sau khi đăng xuất thành công
+        });
+
+        // Hàm xóa cookie
+        function deleteCookie(name) {
+            document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        }
+        // Function to populate modal with current user information
+        function populateProfileModal() {
+            // Fetch user information and populate form fields
+            var userInfo = {}; // Get user information from your backend or storage
+            document.getElementById('username').value = userInfo.username;
+            document.getElementById('email').value = userInfo.email;
+        }
+
+        // Show modal when profile link is clicked
+        document.getElementById('info').addEventListener('click', function () {
+            populateProfileModal();
+            $('#profileModal').modal('show');
+        });
+
+        // Save changes when Save button is clicked
+        document.getElementById('saveProfile').addEventListener('click', function () {
+            // Collect updated user information from form
+            var updatedInfo = {
+                username: document.getElementById('username').value,
+                email: document.getElementById('email').value
+                // Add more fields as needed
+            };
+
+            // Send updated information to server for processing
+            // Implement AJAX request here
+
+            // Close modal after saving changes
+            $('#profileModal').modal('hide');
+        });
+        $(document).ready(function () {
+            // Gọi API để lấy danh sách category
+            $.ajax({
+                url: 'https://localhost:7137/api/Category/all',
+                type: 'GET',
+                success: function (data) {
+                    // Xử lý kết quả trả về từ API
+                    if (Array.isArray(data)) {
+                        // Duyệt qua mỗi category và thêm vào danh sách
+                        data.forEach(function (category) {
+                            var categoryLink = $('<a>').attr('href', '#' + category.categoryId).addClass('nav-item nav-link').text(category.name);
+                            $('#categoryList').append(categoryLink);
+                        });
+                    }
+                },
+                error: function (xhr, status, error) {
+                    // Xử lý khi có lỗi xảy ra
+                    console.error('Error:', error);
+                }
+            });
+        });
+
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
