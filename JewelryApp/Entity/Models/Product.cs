@@ -8,6 +8,7 @@ namespace Entities.Models
         public Product()
         {
             Details = new HashSet<Detail>();
+            Enable=true;
         }
 
         public int ProductId { get; set; }
@@ -19,6 +20,7 @@ namespace Entities.Models
         public string? Detail { get; set; }
         public string? ImageLink { get; set; }
         public int? MaterialId { get; set; }
+        public bool? Enable { get; set; }  
 
         public virtual Category? Category { get; set; }
         public virtual Material? Material { get; set; }

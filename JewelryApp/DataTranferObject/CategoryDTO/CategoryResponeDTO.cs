@@ -11,9 +11,7 @@ namespace DataTranferObject.CategoryDTO
     {
         public int CategoryId { get; set; }
         public string Name { get; set; }
-        public CategoryResponeDTO ToDTO(Category category)
-        {
-            return new CategoryResponeDTO { CategoryId = category.CategoryId, Name = category.Name };
-        }
+        public int NumberProduct {  get; set; }
+        public string? Image { get; set; }
     }
 }

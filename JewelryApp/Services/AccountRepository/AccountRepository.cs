@@ -3,8 +3,10 @@ using DataTranferObject.AccountDTO;
 using DataTranferObject.RoleDTO;
 using Entities.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -21,22 +23,59 @@ namespace Services.AccountRepository
         SignInManager<Account> _signInManager;
         IConfiguration _config;
         RoleManager<IdentityRole> _roleManager;
+        private readonly JewelryContext jewelryContext;
 
-        public AccountRepository(UserManager<Account> userManager, SignInManager<Account> signInManager, IConfiguration config, RoleManager<IdentityRole> roleManager)
+        public AccountRepository(UserManager<Account> userManager, SignInManager<Account> signInManager, IConfiguration config, RoleManager<IdentityRole> roleManager, JewelryContext jewelryContext)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _config = config;
             _roleManager = roleManager;
+            this.jewelryContext = jewelryContext;
         }
 
-        public async Task<string> SignIn(SignIn model)
+        public async Task<bool> ChangePassword(string username, string newPassword)
+        {
+            var account = await  _userManager.FindByNameAsync(username);
+            if (account == null)
+            {
+                return false;
+            }
+                
+
+            // Update the password hash with the new password
+            var token = await _userManager.GeneratePasswordResetTokenAsync(account);
+            var result = await _userManager.ResetPasswordAsync(account, token, newPassword);
+
+            return true;
+        }
+
+        public  AccountResponeDTO GetAccountById(string username)
+        {
+            var account  = jewelryContext.Accounts.Where(x=>x.UserName.Equals(username)).FirstOrDefault();
+            if (account != null)
+            {
+                var respone= new AccountResponeDTO()
+                {
+                    UserName=account.UserName,
+                    Dob=account.Dob,
+                    Address=account.Address,
+                    Phone=account.PhoneNumber,
+                    Email=account.Email,
+                    Fullname=account.Fulllname
+                };
+                return  respone;
+            }
+            return null;
+        }
+
+        public async Task<LoginResponeDTO> SignIn(SignIn model)
         {
             var user= await _userManager.FindByNameAsync(model.Username);
             var checkPass= await _userManager.CheckPasswordAsync(user, model.Password);
             if(user == null || !checkPass)
             {
-                return string.Empty;
+                return null;
             }
 
             //var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password,  false,false);
@@ -62,11 +101,24 @@ namespace Services.AccountRepository
                 claims: authClaims,
                 signingCredentials: new Microsoft.IdentityModel.Tokens.SigningCredentials(authenKey,SecurityAlgorithms.HmacSha256)
              );
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            var result = new LoginResponeDTO
+            {
+                Username = model.Username,
+                Token = new JwtSecurityTokenHandler().WriteToken(token),
+                Role = userRoles[0]
+            };
+            return result;
         }
 
         public async Task<IdentityResult> SignUp(SignUpModel model)
         {
+            var existingUser = await _userManager.FindByNameAsync(model.Username);
+            if (existingUser != null)
+            {
+                // Return an error message indicating that the username already exists
+                var _result = IdentityResult.Failed(new IdentityError { Description = "Username already exists." });
+                return _result;
+            }
 
             var acc = new Account
             {
@@ -86,6 +138,26 @@ namespace Services.AccountRepository
                 await _userManager.AddToRoleAsync(acc, Role.Customer);
             }
             return result;
+        }
+
+        public async Task<bool> UpdateAccountInfo(string username, string fullname, string email, DateTime dob, string address, string phone)
+        {
+            var account = await jewelryContext.Accounts.Where(x=>x.UserName.Equals(username)).FirstOrDefaultAsync();
+            if (account == null)
+            {
+                return false;
+            }
+                
+
+            account.Fulllname = fullname;
+            account.Dob = dob;
+            account.Address = address;
+            account.PhoneNumber = phone;
+
+            jewelryContext.Accounts.Update(account);
+            await jewelryContext.SaveChangesAsync();
+
+            return true;
         }
     }
 }

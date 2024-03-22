@@ -11,7 +11,7 @@ namespace DataTranferObject.CategoryDTO
     {
         public int CategoryId { get; set; }
         public string Name { get; set; }
-
+        public string? Image { get; set; }
         public Category ToEntity()
         {
             return new Category { CategoryId = CategoryId, Name = Name };

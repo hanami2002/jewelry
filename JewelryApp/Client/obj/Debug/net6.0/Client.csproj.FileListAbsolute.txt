@@ -21,7 +21,6 @@ D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\staticwebassets\msbuild
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Client.props
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Client.props
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\staticwebassets.pack.json
-D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\scopedcss\bundle\Client.styles.css
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\scopedcss\projectbundle\Client.bundle.scp.css
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\Client.dll
@@ -29,3 +28,4 @@ D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\refint\Client.dll
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\Client.pdb
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\Client.genruntimeconfig.cache
 D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\ref\Client.dll
+D:\Code\C#\New folder\JewelryApp\Client\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutHome.cshtml.rz.scp.css
