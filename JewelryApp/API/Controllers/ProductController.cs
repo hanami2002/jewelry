@@ -1,4 +1,5 @@
-﻿using DataTranferObject.ProductDTO;
+﻿using DataTranferObject.Paging;
+using DataTranferObject.ProductDTO;
 using Entities.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +24,12 @@ namespace API.Controllers
             try
             {
                 var result = _productRepository.GetProductPages(pagenamme,search, from, to, categoryID, materialID, page);
-                return Ok(result);
+                var paging= new PagingRequest<ProductResponeDTO>();
+                paging.Items = result;
+                paging.PageIndex =page;
+                paging.PageSize = 9;
+                paging.TotalPage = _productRepository.GetProductPagesNew(pagenamme, search, from, to, categoryID, materialID).Count()/ paging.PageSize+1;
+                return Ok(paging);
             }
             catch
             {

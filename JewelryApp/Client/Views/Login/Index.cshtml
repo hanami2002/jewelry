@@ -157,29 +157,6 @@
 					password: password
 				};
 
-				// fetch('https://localhost:7137/api/Account/SignIn', {
-				// 	method: 'POST',
-				// 	headers: {
-				// 		'Content-Type': 'application/json'
-				// 	},
-				// 	body: JSON.stringify(loginData)
-				// })
-				// 	.then(response => {
-				// 		if (!response.ok) {
-				// 			throw new Error('Network response was not ok');
-				// 		}
-				// 		console.log(response.json())
-				// 		return response;
-				// 	})
-				// 	.then(data => {
-				// 		// Xử lý dữ liệu phản hồi từ máy chủ (nếu cần)
-				// 		// $('#successModal').modal('show');
-				// 		console.log(data.json())
-						
-				// 	})
-				// 	.catch(error => {
-				// 		$('#checkAccountModal').modal('show');
-				// 	});
 				$.ajax({
 					url: 'https://localhost:7137/api/Account/SignIn',
 					type: 'POST',

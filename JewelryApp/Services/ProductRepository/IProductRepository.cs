@@ -16,5 +16,6 @@ namespace Services.ProductRepository
         void DeleteProduct(int id);
         void UpdateProduct(ProductRequestDTO product);
         void addProduct(ProductRequestDTO product);
+        public List<ProductResponeDTO> GetProductPagesNew(string pagename, string? search, decimal? from, decimal? to, int? categoryID, int? materialID);
     }
 }

@@ -219,6 +219,9 @@ namespace API.Migrations
                     b.Property<DateTime?>("DateOrder")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool?>("Status")
+                        .HasColumnType("bit");
+
                     b.Property<double?>("Total")
                         .HasColumnType("float");
 

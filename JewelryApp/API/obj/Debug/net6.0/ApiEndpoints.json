@@ -122,6 +122,38 @@
     ]
   },
   {
+    "ContainingType": "API.Controllers.OrderController",
+    "Method": "AddOrder",
+    "RelativePath": "api/Order",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderRequestDTO",
+        "Type": "DataTranferObject.OrderDTO.OrderRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.OrderController",
+    "Method": "GetOrder",
+    "RelativePath": "api/Order/{userid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userid",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.ProductController",
     "Method": "GetProduct",
     "RelativePath": "api/Product",

@@ -57,6 +57,7 @@ namespace Services.AccountRepository
             {
                 var respone= new AccountResponeDTO()
                 {
+                    Id= account.Id,
                     UserName=account.UserName,
                     Dob=account.Dob,
                     Address=account.Address,
