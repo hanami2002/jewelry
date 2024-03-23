@@ -98,6 +98,47 @@ namespace Services.ProductRepository
             }).ToList();
             return result;
         }
+        public List<ProductResponeDTO> GetProductPagesNew(string pagename, string? search, decimal? from, decimal? to, int? categoryID, int? materialID)
+        {
+            //search
+            var list = _context.Products.Include(p => p.Category).Include(m => m.Material).Where(x => x.Enable == true).ToList().AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = list.Where(x => x.Name.Contains(search));
+            }
+            if (from.HasValue)
+            {
+                list = list.Where(x => x.SellPrice >= from);
+            }
+            if (to.HasValue)
+            {
+                list = list.Where(x => x.SellPrice <= to);
+            }
+            if (categoryID.HasValue)
+            {
+                list = list.Where(x => x.CategoryId == categoryID);
+            }
+            if (materialID.HasValue)
+            {
+                list = list.Where(x => x.MaterialId == materialID);
+            }
+            
+
+            var result = list.Select(x => new ProductResponeDTO
+            {
+                ProductId = x.ProductId,
+                Name = x.Name,
+                SellPrice = x.SellPrice,
+                CategoryName = x.Category.Name,
+                InStock = x.InStock,
+                Desciption = x.Desciption,
+                Detail = x.Detail,
+                ImageLink = x.ImageLink,
+                MaterialName = x.Material.Name
+            }).ToList();
+            return result;
+        }
 
         public void UpdateProduct(ProductRequestDTO product)
         {

@@ -15,6 +15,7 @@ namespace Entities.Models
         public string? Userid { get; set; }
         public DateTime? DateOrder { get; set; }
         public double? Total { get; set; }
+        public bool? Status { get; set; }
 
         public virtual Account? UsernameNavigation { get; set; }
         public virtual ICollection<Detail> Details { get; set; }

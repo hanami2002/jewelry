@@ -155,9 +155,9 @@
             success: function (data) {
                 console.log(data)
                 // Xử lý kết quả trả về từ API
-                if (Array.isArray(data)) {
+                if (Array.isArray(data.items)) {
                     // Duyệt qua mỗi sản phẩm và thêm vào danh sách
-                    data.forEach(function (product) {
+                    data.items.forEach(function (product) {
                         var productItem = `
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
@@ -194,9 +194,9 @@
             success: function (data) {
                 console.log(data);
                 // Xử lý kết quả trả về từ API
-                if (Array.isArray(data)) {
+                if (Array.isArray(data.items)) {
                     // Duyệt qua mỗi sản phẩm và thêm vào danh sách
-                    data.forEach(function (product) {
+                    data.items.forEach(function (product) {
                         var productItem = `
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
@@ -277,6 +277,4 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
-<script>
 
-</script>
