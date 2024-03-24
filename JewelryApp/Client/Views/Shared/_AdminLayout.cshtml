@@ -412,12 +412,40 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" onclick="logout()" href="#">Logout</a>
                 </div>
             </div>
         </div>
     </div>
-
+    <script>
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1, cookie.length);
+                }
+                if (cookie.indexOf(nameEQ) === 0) {
+                    return cookie.substring(nameEQ.length, cookie.length);
+                }
+            }
+            return null;
+        }
+        var isLoggedIn = false;
+        var token = getCookie("token");
+        console.log(token);
+        if (token == null) {
+            window.location.href = 'https://localhost:7144/Error';
+        }
+        function deleteCookie(name) {
+            document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        }
+        function logout() {
+            deleteCookie('token');
+            window.location.href = 'https://localhost:7144/Login';
+        }
+    </script>
     <!-- Bootstrap core JavaScript-->
     <script src="/admin-assets/vendor/jquery/jquery.min.js"></script>
     <script src="/admin-assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

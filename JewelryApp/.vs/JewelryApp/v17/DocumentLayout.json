@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Code\\C#\\New folder\\JewelryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\wwwroot\\admin-assets\\js\\product\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\wwwroot\\admin-assets\\js\\product\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\views\\manageproducts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\views\\manageproducts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\wwwroot\\admin-assets\\js\\order\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\wwwroot\\admin-assets\\js\\order\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,40 +19,24 @@
       "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\wwwroot\\admin-assets\\js\\demo\\datatables-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\wwwroot\\admin-assets\\js\\demo\\datatables-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\wwwroot\\admin-assets\\js\\demo\\chart-area-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\wwwroot\\admin-assets\\js\\demo\\chart-area-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\wwwroot\\admin-assets\\js\\sb-admin-2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\wwwroot\\admin-assets\\js\\sb-admin-2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\views\\error\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\views\\error\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|d:\\code\\c#\\new folder\\jewelryapp\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0871D68-9A3B-4AA6-996D-3B940EFD1607}|Validation\\Utilities.csproj|d:\\code\\c#\\new folder\\jewelryapp\\validation\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0871D68-9A3B-4AA6-996D-3B940EFD1607}|Validation\\Utilities.csproj|solutionrelative:validation\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|d:\\code\\c#\\new folder\\jewelryapp\\api\\controllers\\othercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD702ED2-9681-4270-8F53-E3085EFECE1C}|API\\API.csproj|solutionrelative:api\\controllers\\othercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34805EBB-06F2-4133-ACD9-9E9E10AC40BE}|Services\\Services.csproj|d:\\code\\c#\\new folder\\jewelryapp\\services\\accountrepository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34805EBB-06F2-4133-ACD9-9E9E10AC40BE}|Services\\Services.csproj|solutionrelative:services\\accountrepository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34805EBB-06F2-4133-ACD9-9E9E10AC40BE}|Services\\Services.csproj|d:\\code\\c#\\new folder\\jewelryapp\\services\\accountrepository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34805EBB-06F2-4133-ACD9-9E9E10AC40BE}|Services\\Services.csproj|solutionrelative:services\\accountrepository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|d:\\code\\c#\\new folder\\jewelryapp\\client\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED43015F-BC4B-4000-A8B5-8840EE64AE1E}|Client\\Client.csproj|solutionrelative:client\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,59 +58,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\ManageProducts\\Index.cshtml",
-              "RelativeDocumentMoniker": "Client\\Views\\ManageProducts\\Index.cshtml",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\ManageProducts\\Index.cshtml",
-              "RelativeToolTip": "Client\\Views\\ManageProducts\\Index.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-24T20:01:11.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "index.js",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\product\\index.js",
-              "RelativeDocumentMoniker": "Client\\wwwroot\\admin-assets\\js\\product\\index.js",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\product\\index.js",
-              "RelativeToolTip": "Client\\wwwroot\\admin-assets\\js\\product\\index.js",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAzwIMAAAAYAAAA",
+              "DocumentIndex": 4,
+              "Title": "datatables-demo.js",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\demo\\datatables-demo.js",
+              "RelativeDocumentMoniker": "Client\\wwwroot\\admin-assets\\js\\demo\\datatables-demo.js",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\demo\\datatables-demo.js",
+              "RelativeToolTip": "Client\\wwwroot\\admin-assets\\js\\demo\\datatables-demo.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-24T19:58:38.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "index.js",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\order\\index.js",
-              "RelativeDocumentMoniker": "Client\\wwwroot\\admin-assets\\js\\order\\index.js",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\order\\index.js",
-              "RelativeToolTip": "Client\\wwwroot\\admin-assets\\js\\order\\index.js",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-24T19:58:29.516Z",
+              "WhenOpened": "2024-03-24T21:48:49.122Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Client\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Client\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-24T19:42:44.661Z",
+              "Title": "sb-admin-2.js",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\sb-admin-2.js",
+              "RelativeDocumentMoniker": "Client\\wwwroot\\admin-assets\\js\\sb-admin-2.js",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\sb-admin-2.js",
+              "RelativeToolTip": "Client\\wwwroot\\admin-assets\\js\\sb-admin-2.js",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-24T21:48:11.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Client\\Controllers\\DashboardController.cs",
@@ -138,124 +92,85 @@
               "RelativeToolTip": "Client\\Controllers\\DashboardController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T19:32:55.806Z",
+              "WhenOpened": "2024-03-24T21:45:13.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "chart-area-demo.js",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\demo\\chart-area-demo.js",
-              "RelativeDocumentMoniker": "Client\\wwwroot\\admin-assets\\js\\demo\\chart-area-demo.js",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\wwwroot\\admin-assets\\js\\demo\\chart-area-demo.js",
-              "RelativeToolTip": "Client\\wwwroot\\admin-assets\\js\\demo\\chart-area-demo.js",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAYwHsAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-24T19:26:08.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Client\\Views\\Dashboard\\Index.cshtml",
               "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Client\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIwAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-24T19:19:44.534Z",
+              "WhenOpened": "2024-03-24T21:45:10.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_LayoutHome.cshtml",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Shared\\_LayoutHome.cshtml",
-              "RelativeDocumentMoniker": "Client\\Views\\Shared\\_LayoutHome.cshtml",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Shared\\_LayoutHome.cshtml",
-              "RelativeToolTip": "Client\\Views\\Shared\\_LayoutHome.cshtml",
-              "ViewState": "AQIAABgBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Client\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Client\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAAALoAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-24T19:13:58.64Z",
+              "WhenOpened": "2024-03-24T21:44:47.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "Client\\Views\\Login\\Index.cshtml",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "Client\\Views\\Login\\Index.cshtml",
-              "ViewState": "AQIAAJcAAAAAAAAAAAAowKsAAAAMAAAA",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Error\\Index.cshtml",
+              "RelativeDocumentMoniker": "Client\\Views\\Error\\Index.cshtml",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Error\\Index.cshtml",
+              "RelativeToolTip": "Client\\Views\\Error\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-24T19:06:28.438Z",
+              "WhenOpened": "2024-03-24T21:42:59.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EmailServices.cs",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Validation\\EmailServices.cs",
-              "RelativeDocumentMoniker": "Validation\\EmailServices.cs",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Validation\\EmailServices.cs",
-              "RelativeToolTip": "Validation\\EmailServices.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Controllers\\ErrorController.cs",
+              "RelativeDocumentMoniker": "Client\\Controllers\\ErrorController.cs",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Controllers\\ErrorController.cs",
+              "RelativeToolTip": "Client\\Controllers\\ErrorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T19:00:05.277Z",
+              "WhenOpened": "2024-03-24T21:42:41.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OtherController.cs",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\Controllers\\OtherController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\OtherController.cs",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\Controllers\\OtherController.cs",
-              "RelativeToolTip": "API\\Controllers\\OtherController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T18:54:41.159Z",
+              "DocumentIndex": 1,
+              "Title": "_LayoutHome.cshtml",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeDocumentMoniker": "Client\\Views\\Shared\\_LayoutHome.cshtml",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeToolTip": "Client\\Views\\Shared\\_LayoutHome.cshtml",
+              "ViewState": "AQIAADEBAAAAAAAAAAAAAD4BAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-24T21:34:39.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AccountRepository.cs",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Services\\AccountRepository\\AccountRepository.cs",
-              "RelativeDocumentMoniker": "Services\\AccountRepository\\AccountRepository.cs",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Services\\AccountRepository\\AccountRepository.cs",
-              "RelativeToolTip": "Services\\AccountRepository\\AccountRepository.cs",
-              "ViewState": "AQIAAKMAAAAAAAAAAAAAwL0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T18:18:17.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IAccountRepository.cs",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Services\\AccountRepository\\IAccountRepository.cs",
-              "RelativeDocumentMoniker": "Services\\AccountRepository\\IAccountRepository.cs",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Services\\AccountRepository\\IAccountRepository.cs",
-              "RelativeToolTip": "Services\\AccountRepository\\IAccountRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T18:18:14.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\API\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "API\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAAwGAAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T18:18:10.234Z",
+              "DocumentIndex": 0,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Client\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\Code\\C#\\New folder\\JewelryApp\\Client\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Client\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAAJ4BAAAAAAAAAAAAAL0BAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-24T21:34:38.342Z",
               "EditorCaption": ""
             }
           ]
