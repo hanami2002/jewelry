@@ -1,0 +1,115 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<input id="ProductId" value="@ViewBag.ProductId" hidden />
+<!-- Page Header Start -->
+<div class="container-fluid bg-secondary mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+        <h1 class="font-weight-semi-bold text-uppercase mb-3">Shop Detail</h1>
+        <div class="d-inline-flex">
+            <p class="m-0"><a href="/Home">Home</a></p>
+            <p class="m-0 px-2">-</p>
+            <p class="m-0">Shop Detail</p>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Shop Detail Start -->
+<div id="productDetail" class="container-fluid py-5">
+    <div class="row px-xl-5">
+        <div class="col-lg-5 pb-5">
+            <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner border">
+                    <div class="carousel-item active">
+                        <img id="imgProduct" class="w-100 h-100" src="img/product-1.jpg" alt="Image">
+                    </div>
+                    
+                </div>
+                <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+                    <i class="fa fa-2x fa-angle-left text-dark"></i>
+                </a>
+                <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+                    <i class="fa fa-2x fa-angle-right text-dark"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-7 pb-5">
+            <h3 id="productName" class="font-weight-semi-bold">Colorful Stylish Shirt</h3>           
+            <h3 id="productPrice" class="font-weight-semi-bold mb-4">$150.00</h3>
+            <p id="productCategory" class="mb-4"></p>                
+        </div>
+    </div>
+    <div class="row px-xl-5">
+        <div class="col">
+            <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Description</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Information</a>
+                
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-pane-1">
+                    <h4 class="mb-3">Product Description</h4>
+                    <p id="descriptionId">Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
+              </div>
+                <div class="tab-pane fade" id="tab-pane-2">
+                    <h4 class="mb-3">Additional Information</h4>
+                    <p id="detailProduct" >Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    var productIdInput = document.getElementById("ProductId");
+
+    // Lấy giá trị của phần tử "ProductId"
+    var productIdValue = productIdInput.value;
+
+    // In giá trị của phần tử "ProductId" ra console
+    console.log("Giá trị của phần tử ProductId là: " + productIdValue);
+    $(document).ready(function () {
+        // Gọi API để lấy dữ liệu sản phẩm với ID là 55
+        $.ajax({
+            url: "https://localhost:7137/api/Product/GetById/" + productIdValue,
+            type: "GET",
+            success: function (response) {
+                console.log(response);
+                // Hiển thị dữ liệu vào các phần tử HTML
+                var imgProduct = document.getElementById("imgProduct");
+
+                // Thay đổi thuộc tính src của thẻ <img> thành đường dẫn mới
+                imgProduct.src = response.imageLink;
+                // JavaScript
+                // Lấy ra các phần tử HTML bằng cách sử dụng ID của chúng
+                var productName = document.getElementById("productName");
+                var productPrice = document.getElementById("productPrice");
+                var productCategory = document.getElementById("productCategory");
+                var descriptionId = document.getElementById("descriptionId");
+                var detailProduct = document.getElementById("detailProduct");
+
+                // Thay đổi nội dung của các phần tử HTML
+                productName.textContent = response.name;
+                productPrice.textContent = response.sellPrice.toLocaleString(); // hoặc bất kỳ giá trị mới nào bạn muốn
+                productCategory.textContent = 'Phân Loai: '+ response.categoryName;
+                descriptionId.textContent = response.desciption;
+                detailProduct.textContent = response.detail;
+
+
+                // $("#productDetails").html(productDetailsHtml);
+            },
+            error: function (xhr, status, error) {
+                console.error("Error fetching product details:", error);
+                $("#productDetails").html("<h2>Error loading product details</h2>");
+            }
+        });
+    });
+</script>
+

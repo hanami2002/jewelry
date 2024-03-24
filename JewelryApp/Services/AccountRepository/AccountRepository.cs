@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,20 +35,29 @@ namespace Services.AccountRepository
             this.jewelryContext = jewelryContext;
         }
 
-        public async Task<bool> ChangePassword(string username, string newPassword)
+        public async Task<bool> ChangePassword(string username,string oldPassword, string newPassword)
         {
-            var account = await  _userManager.FindByNameAsync(username);
+
+            var account = await _userManager.FindByNameAsync(username);
             if (account == null)
             {
                 return false;
             }
-                
-
-            // Update the password hash with the new password
-            var token = await _userManager.GeneratePasswordResetTokenAsync(account);
-            var result = await _userManager.ResetPasswordAsync(account, token, newPassword);
-
-            return true;
+            
+            var isPasswordValid = await _userManager.CheckPasswordAsync(account, oldPassword);
+            if (!isPasswordValid)
+            {
+                return false;
+            }
+            var result = await _userManager.ChangePasswordAsync(account, oldPassword, newPassword);
+            if (result.Succeeded)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public  AccountResponeDTO GetAccountById(string username)
@@ -78,11 +88,6 @@ namespace Services.AccountRepository
             {
                 return null;
             }
-
-            //var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password,  false,false);
-            //if (!result.Succeeded) {
-            //return string.Empty;
-            //    }
             var authClaims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name,model.Username),
@@ -92,8 +97,7 @@ namespace Services.AccountRepository
             foreach (var role in userRoles)
             {
                 authClaims.Add(new Claim(ClaimTypes.Role, role.ToString()));
-            }
-
+            } 
             var authenKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JWT:Secret"]));
             var token = new JwtSecurityToken(
                 issuer: _config["JWT:ValidIssuer"],
@@ -159,6 +163,30 @@ namespace Services.AccountRepository
             await jewelryContext.SaveChangesAsync();
 
             return true;
+        }
+
+        public async Task<bool> Reset(string accountId, string email, string newPassword)
+        {
+            try
+            {
+                // Tìm kiếm tài khoản theo accountId
+                var user = await _userManager.FindByNameAsync(accountId);
+                if (user == null || !user.Email.Equals(email))
+                {
+                    return false;
+                }
+
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+                var result = await _userManager.ResetPasswordAsync(user, token, newPassword);
+
+                return result.Succeeded;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                return false;
+            }
         }
     }
 }

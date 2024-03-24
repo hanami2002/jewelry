@@ -1,0 +1,154 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Manage Orders</h1>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="row">
+            <div class="col-md-2">
+                <h6 class="m-0 font-weight-bold text-primary">Order Tables</h6>
+            </div>
+      @*      <div class="col-md-2">
+                <button id="btnAdd" class="btn btn-primary">Create</button>
+            </div>*@
+            <div class="col-md-2">
+                <button id="btnSearch" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Order Id</th>
+                        <th>Type</th>
+                        <th>User</th>
+                        <th>Date Order</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                    
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li id="li-pre" class="page-item">
+                  <a class="page-link" id="pre" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" id="next" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel"
+        aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Search Order</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="mBody" class="modal-body">
+                <!-- Form group cho trường Type -->
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select class="form-control" id="type">
+                        <option value="all">All</option>
+                        <option value="bán">Sell</option>
+                        <option value="mua">Buy</option>
+                    </select>
+                </div>
+
+                <!-- Form group cho trường Status -->
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select class="form-control" id="status">
+                        <option value="all">All</option>
+                        <option value="1">Checked</option>
+                        <option value="0">Not Yet</option>
+                    </select>
+                </div>
+
+                <!-- Form group cho trường From (Date) -->
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <input type="date" class="form-control" id="from">
+                </div>
+
+                <!-- Form group cho trường To (Date) -->
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <input type="date" class="form-control" id="to">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" id="btnSave">Save</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="detailModalLabel"
+        aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailModalLabel">Order Detail</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="mBody2" class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Detail Id</th>
+                                <th>Product Image</th>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="data2">
+                    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-info" id="grandTotal"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/admin-assets/js/order/index.js"></script>

@@ -7,6 +7,7 @@ using Services.PagingRepository;
 using Services.ProductRepository;
 using Services.OderRepository;
 using System.ComponentModel.Design;
+using Utilities;
 
 namespace API.Config
 {
@@ -21,6 +22,7 @@ namespace API.Config
             services.AddScoped< IDetailRepository, DetailRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<PagingRepository>();
+            //services.AddScoped<IEmailService, EmailService>();
 
         }
     }

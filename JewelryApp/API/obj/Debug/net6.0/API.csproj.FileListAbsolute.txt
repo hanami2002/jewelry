@@ -84,3 +84,16 @@ D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Services.dll
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Utilities.dll
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Services.pdb
 D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Utilities.pdb
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\FubarCoder.RestSharp.Portable.Core.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\FubarCoder.RestSharp.Portable.HttpClient.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\JsonSubTypes.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\sib_api_v3_sdk.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\MailKit.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\MimeKit.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\System.Formats.Asn1.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\Code\C#\New folder\JewelryApp\API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll

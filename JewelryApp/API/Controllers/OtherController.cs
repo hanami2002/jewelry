@@ -3,6 +3,7 @@ using DataTranferObject.ProductDTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Services.PagingRepository;
+using Utilities;
 
 namespace API.Controllers
 {
@@ -16,10 +17,12 @@ namespace API.Controllers
         {
             this.pagingRepository = pagingRepository;
         }
-       
-        //public PagingRequest<ProductResponeDTO> GetPaging()
-        //{
-        //    return pagingRepository.GetPagingRequest();
-        //}
+        [HttpPost]
+        public async Task<ActionResult> SendEmail(EmailMessage emailSetting)
+        {
+            EmailServices emailServices = new EmailServices();
+           await emailServices.SendAsync(emailSetting);
+            return  Ok();
+        }     
     }
 }
