@@ -15,6 +15,7 @@ namespace Services.AccountRepository
         public Task<LoginResponeDTO> SignIn(SignIn model);
         AccountResponeDTO GetAccountById(string accountId);
         Task<bool> UpdateAccountInfo(string accountId, string fullname,string email, DateTime dob, string address, string phone);
-        Task<bool> ChangePassword(string accountId, string newPassword);
+        Task<bool> ChangePassword(string accountId, string oldPassword, string newPassword);
+        Task<bool> Reset(string accountId, string email, string newPassword);
     }
 }

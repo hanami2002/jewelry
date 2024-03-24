@@ -153,7 +153,7 @@
             url: 'https://localhost:7137/api/Product?pagenamme=home&page=1',
             type: 'GET',
             success: function (data) {
-                console.log(data)
+               
                 // Xử lý kết quả trả về từ API
                 if (Array.isArray(data.items)) {
                     // Duyệt qua mỗi sản phẩm và thêm vào danh sách
@@ -171,8 +171,8 @@
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
-                                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                                                <a href="/Home/Detail?ProductId=${product.productId}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                                        <a href="#" onclick="addToCart(${product.productId})" id="addToCartButton" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +192,6 @@
             url: 'https://localhost:7137/api/Product?pagenamme=home&page=1',
             type: 'GET',
             success: function (data) {
-                console.log(data);
                 // Xử lý kết quả trả về từ API
                 if (Array.isArray(data.items)) {
                     // Duyệt qua mỗi sản phẩm và thêm vào danh sách
@@ -210,8 +209,8 @@
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
-                                            <a href="/Detail?ProductId=${product.productId}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                                                <a href="/Home/Detail?ProductId=${product.productId}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                                            <a href="#" onclick="addToCart(${product.productId})" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +239,7 @@
                             <div class="col-lg-4 col-md-6 pb-1">
                                 <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                                     <p class="text-right">${category.numberProduct} Products</p>
-                                    <a href="#" class="cat-img position-relative overflow-hidden mb-3">
+                                                <a href="/Home/Shop?Category=${category.categoryId}" class="cat-img position-relative overflow-hidden mb-3">
                                             <img class="img-fluid fixed-size" src="${category.image}" alt="${category.name}">
                                     </a>
                                     <h5 class="font-weight-semi-bold m-0">${category.name}</h5>
@@ -257,11 +256,24 @@
             }
         });
     };
+    
+    // var addToCartButton = document.getElementById("addToCartButton");
+   
+    // addToCartButton.addEventListener("click", function (event) {
+        
+    //     event.preventDefault();
+    //     var hrefValue = addToCartButton.getAttribute("href");
+    //     var id = hrefValue.split("/").pop();
+    //     console.log("ID:", id); 
+        
+    //     alert("Sản phẩm đã được thêm vào giỏ hàng!");
+    // });
     document.addEventListener("DOMContentLoaded", function () {
         loadProductHeader();
         loadProductsFooter();
         loadCategoryList();
     });
+
 </script>
 <!-- Vendor End --><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,188 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Thống kê</h1>
+
+
+<!-- Content Row -->
+<div class="row">
+
+    <div class="col-xl-8 col-lg-7">
+
+        <!-- Area Chart -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Gold Price Trend</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                </div>
+                <hr>
+                Track the current and historical trends of gold prices.               
+            </div>
+        </div>
+
+        <!-- Bar Chart -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Gold Sales Comparison</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                </div>
+                <hr>
+                Compare the sales performance of different gold products.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Donut Chart -->
+    <div class="col-xl-4 col-lg-5">
+        <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Gold Type Distribution</h6>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <div class="chart-pie pt-4">
+                    <canvas id="myPieChart"></canvas>
+                </div>
+                <hr>
+                See the distribution of different types of gold products.
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/admin-assets/vendor/chart.js/Chart.min.js"></script>
+<script>
+    var goldTypeData = {
+        labels: ["Đồng hồ nam", "Đồng hồ nữ", "Đồng hồ trẻ em", "Dây chuyền và vòng cổ", "Nhẫn nam", "Nhẫn nữ"],
+        datasets: [{
+            data: [20, 15, 15, 25, 5, 20], 
+            backgroundColor: ["#4e73df", "#1cc88a", "#36b9cc", "#f6c23e", "#f8d7da", "#e83e8c"],
+            hoverBackgroundColor: ["#2e59d9", "#17a673", "#2c9faf", "#dda20a", "#f4b0b7", "#da1e4d"],
+            hoverBorderColor: "rgba(234, 236, 244, 1)",
+        }],
+    };
+
+    
+    var pieChartOptions = {
+        maintainAspectRatio: false,
+        tooltips: {
+            backgroundColor: "rgb(255,255,255)",
+            bodyFontColor: "#858796",
+            borderColor: '#dddfeb',
+            borderWidth: 1,
+            xPadding: 15,
+            yPadding: 15,
+            displayColors: false,
+            caretPadding: 10,
+        },
+        legend: {
+            display: true
+        },
+        cutoutPercentage: 80,
+    };
+
+    var ctx = document.getElementById("myPieChart").getContext('2d');
+
+    var myPieChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: goldTypeData,
+        options: pieChartOptions
+    });
+    var data = {
+        labels: ["4/2023", "5", "6", "7", "8", "9", "10", "11", "12", "1/2024", "2", "3"],
+        datasets: [{
+            label: "Gold Price",
+            backgroundColor: "rgba(78, 115, 223, 0.05)",
+            borderColor: "rgba(78, 115, 223, 1)",
+            data: [1956, 1982, 1977, 1920, 1944, 1939, 1820, 1982, 2071, 2059, 2054, 2082],
+        }]
+    };
+
+    
+    var config = {
+        type: 'line',
+        data: data,
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    }
+                }],
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: false
+                    }
+                }]
+            }
+        }
+    };
+   
+    var salesData = {
+        labels: ['Vàng miếng SJC 999.9', 'Nhẫn Trơn PNJ 999.9', 'Vàng Kim Bảo 999.9', 'Vàng Phúc Lộc Tài 999.9'],
+        datasets: [{
+            label: 'Giá mua',
+            backgroundColor: 'rgba(78, 115, 223, 0.5)',
+            hoverBackgroundColor: 'rgba(78, 115, 223, 0.7)',
+            borderColor: 'rgba(78, 115, 223, 1)',
+            data: [7810, 6790, 6790, 6790]
+        }, {
+            label: 'Giá bán',
+            backgroundColor: 'rgba(28, 200, 138, 0.5)',
+            hoverBackgroundColor: 'rgba(28, 200, 138, 0.7)',
+            borderColor: 'rgba(28, 200, 138, 1)',
+            data: [8030, 6900, 6900, 6910]
+        }]
+    };
+
+   
+    var chartOptions = {
+        maintainAspectRatio: false,
+        legend: {
+            display: true
+        },
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    display: false
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                },
+                gridLines: {
+                    color: 'rgba(0, 0, 0, 0.1)'
+                }
+            }]
+        }
+    };
+
+   
+    var ctx = document.getElementById('myBarChart').getContext('2d');
+    var myBarChart = new Chart(ctx, {
+        type: 'bar',
+        data: salesData,
+        options: chartOptions
+    });
+
+
+   
+    var ctx = document.getElementById("myAreaChart").getContext("2d");
+    var myAreaChart = new Chart(ctx, config);
+
+</script>
+@* <script src="/admin-assets/js/demo/chart-area-demo.js"></script>
+<script src="/admin-assets/js/demo/chart-pie-demo.js"></script>
+<script src="/admin-assets/js/demo/chart-bar-demo.js"></script> *@

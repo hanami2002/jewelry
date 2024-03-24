@@ -1,4 +1,5 @@
-﻿@*
+﻿
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -10,6 +11,8 @@
         width: 100%;
     }
 </style>
+<input type="text" id="categoryId" name="name" value="@ViewBag.Category" hidden />
+
 <div class="container-fluid bg-secondary mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
         <h1 class="font-weight-semi-bold text-uppercase mb-3">Our Shop</h1>
@@ -35,85 +38,15 @@
                         <input type="text" class="form-control" id="priceDisplay" readonly>
                     </div>
                     <div class="mb-3">
-                        <input type="range" class="form-range" step="500000" min="0" max="500000000" id="priceRange">
+                        <input type="range" class="form-range" step="500000" min="0" max="50000000" id="priceRange">
+                    </div>
+                    <div class="mb-3">
+                        <button id="searchByPrice" class="btn btn-outline-primary" type="button">Tìm theo khoảng giá</button>
                     </div>
                 </form>
             </div>
             <!-- Price End -->
-            <!-- Color Start -->
-            <div class="border-bottom mb-4 pb-4">
-                <h5 class="font-weight-semi-bold mb-4">Filter by color</h5>
-                <form>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" checked id="color-all">
-                        <label class="custom-control-label" for="price-all">All Color</label>
-                        <span class="badge border font-weight-normal">1000</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="color-1">
-                        <label class="custom-control-label" for="color-1">Black</label>
-                        <span class="badge border font-weight-normal">150</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="color-2">
-                        <label class="custom-control-label" for="color-2">White</label>
-                        <span class="badge border font-weight-normal">295</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="color-3">
-                        <label class="custom-control-label" for="color-3">Red</label>
-                        <span class="badge border font-weight-normal">246</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="color-4">
-                        <label class="custom-control-label" for="color-4">Blue</label>
-                        <span class="badge border font-weight-normal">145</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
-                        <input type="checkbox" class="custom-control-input" id="color-5">
-                        <label class="custom-control-label" for="color-5">Green</label>
-                        <span class="badge border font-weight-normal">168</span>
-                    </div>
-                </form>
-            </div>
-            <!-- Color End -->
-            <!-- Size Start -->
-            <div class="mb-5">
-                <h5 class="font-weight-semi-bold mb-4">Filter by size</h5>
-                <form>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" checked id="size-all">
-                        <label class="custom-control-label" for="size-all">All Size</label>
-                        <span class="badge border font-weight-normal">1000</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="size-1">
-                        <label class="custom-control-label" for="size-1">XS</label>
-                        <span class="badge border font-weight-normal">150</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="size-2">
-                        <label class="custom-control-label" for="size-2">S</label>
-                        <span class="badge border font-weight-normal">295</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="size-3">
-                        <label class="custom-control-label" for="size-3">M</label>
-                        <span class="badge border font-weight-normal">246</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="size-4">
-                        <label class="custom-control-label" for="size-4">L</label>
-                        <span class="badge border font-weight-normal">145</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
-                        <input type="checkbox" class="custom-control-input" id="size-5">
-                        <label class="custom-control-label" for="size-5">XL</label>
-                        <span class="badge border font-weight-normal">168</span>
-                    </div>
-                </form>
-            </div>
-            <!-- Size End -->
+
         </div>
         <!-- Shop Sidebar End -->
         <!-- Shop Product Start -->
@@ -123,9 +56,9 @@
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <form action="">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search by name">
+                                <input id="searchInput" type="text" class="form-control" placeholder="Search by name">
                                 <div class="input-group-append">
-                                    <span class="input-group-text bg-transparent text-primary">
+                                    <span id="searchIcon" class="input-group-text bg-transparent text-primary">
                                         <i class="fa fa-search"></i>
                                     </span>
                                 </div>
@@ -201,21 +134,21 @@
         crossorigin="anonymous"></script>
 <!-- Shop End -->
 <script>
+    
     const priceRange = document.getElementById('priceRange');
     const priceDisplay = document.getElementById('priceDisplay');
     var valuerange;
-
-    // Thêm sự kiện 'input' cho thanh trượt
     priceRange.addEventListener('input', function () {
-        // Cập nhật giá trị hiển thị
         priceDisplay.value = '' + this.value;
         valuerange = this.value
     });
-
-    // Cập nhật giá trị ban đầu
     priceDisplay.value = '' + priceRange.value;
+    var categoryIdValue = document.getElementById("categoryId").value;
     var path = "https://localhost:7137/api/Product?pagenamme=shop&from=0";
     var path1 = "https://localhost:7137/api/Product?pagenamme=shop&page=1"
+    if (categoryIdValue != '') {
+        path1 = path1 + '&categoryID=' + categoryIdValue
+    }
     function loadProduct(pathstring) {
         $.ajax({
             url: pathstring,
@@ -226,15 +159,10 @@
                 var pageIndex = data.pageIndex;
                 var pageSize = data.pageSize;
                 var totalPage = data.totalPage;
-
-                var footerContent = ""; // Khởi tạo biến chứa nội dung footer
-
-                // Tạo các nút "View Detail" và "Add To Cart" cho từng trang
+                var footerContent = ""; 
                 for (var i = 1; i <= totalPage; i++) {
                     footerContent += '<li class="page-item" > <a class="page-link" href = "' + path + '&page=' + i + '" > ' + i + ' </a></li>'
                 }
-
-                // Thêm nội dung footer vào phần tử có id là "productFooter"
                 $("#paging").html(footerContent);
                 $.each(data.items, function (index, product) {
                     productListHtml += `
@@ -246,19 +174,22 @@
                                 <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                     <h6 class="text-truncate mb-3">${product.name}</h6>
                                     <div class="d-flex justify-content-center">
-                                        <h6>$${product.sellPrice.toFixed(2)}</h6>
+                                        <h6 id="price">${product.sellPrice}</h6>
                                         <h6 class="text-muted ml-2"><del>$123.00</del></h6>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex justify-content-between bg-light border">
-                                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                                            <a href="/Home/Detail?ProductId=${product.productId}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                                            <a href="#" onclick="addToCart(${product.productId})" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                     `;
                 });
+                
                 $('#productList').html(productListHtml);
+                // var price = document.getElementById("price");
+                // price.textContent = product.sellPrice.toLocaleString();
             },
             error: function () {
                 $('#productList').html('<p>Error loading products.</p>');
@@ -269,30 +200,44 @@
         $.ajax({
             url: "https://localhost:7137/api/Other",
             type: "GET",
-            success: function (data) {
-                // Xử lý dữ liệu trả về
+            success: function (data) {                
                 var pageIndex = data.pageIndex;
                 var pageSize = data.pageSize;
                 var totalPage = data.totalPage;
 
-                var footerContent = ""; // Khởi tạo biến chứa nội dung footer
-
-                // Tạo các nút "View Detail" và "Add To Cart" cho từng trang
+                var footerContent = "";
                 for (var i = 1; i <= totalPage; i++) {
                     footerContent += '<li class="page-item" > <a class="page-link" href = "'+path+'&page='+i+'" > '+i+' </a></li>'                   
                 }
-
-                // Thêm nội dung footer vào phần tử có id là "productFooter"
                 $("#paging").html(footerContent);
             },
             error: function (xhr, status, error) {
-                // Xử lý lỗi
                 console.error("Error:", error);
             }
         });
 
     }
     loadProduct(path1);
-    
+
+    var searchIcon = document.getElementById("searchIcon");
+    var searchByPriceButton = document.getElementById("searchByPrice");
+    var priceRangeInput = document.getElementById("priceRange");
+    var priceDisplayInput = document.getElementById("priceDisplay");
+   
+    searchIcon.addEventListener("click", function () {       
+        var searchValue = document.getElementById("searchInput").value;
+        if (searchValue != '') {
+            path1 = path1 + '&search='+searchValue
+            loadProduct(path1);
+        }          
+    });
+    searchByPriceButton.addEventListener("click", function () {       
+        var selectedPrice = priceRangeInput.value;       
+        priceDisplayInput.value = selectedPrice;
+        path1 = path1 + '&to=' + selectedPrice;
+        loadProduct(path1);
+        
+    });
+
 
 </script>

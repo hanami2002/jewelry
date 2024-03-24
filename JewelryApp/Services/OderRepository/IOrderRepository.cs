@@ -12,8 +12,9 @@ namespace Services.OderRepository
         public List<OrderResponeDTO> GetAll();
         public List<OrderResponeDTO> GetByFilter(string? userId,DateTime? date);
         public OrderResponeDTO CheckOrder(string userId);
-        public OrderResponeDTO AddNewOrder(OrderRequestDTO orderRequestDTO);
-        public OrderResponeDTO UpdateOrder(OrderRequestDTO orderRequestDTO);
+        public OrderResponeDTO AddNewOrder(string userId);
+        public OrderResponeDTO UpdateOrder(string userId, double total);
+        SearchOrderResponse GetAllOrders(SearchOrderRequestDTO request);
 
     }
 }

@@ -16,11 +16,11 @@ namespace API.Controllers
             _orderRepository = orderRepository;
         }
         [HttpPost]
-        public IActionResult AddOrder(OrderRequestDTO orderRequestDTO)
+        public IActionResult AddOrder(string name)
         {
             try
             {
-                var result = _orderRepository.AddNewOrder(orderRequestDTO);
+                var result = _orderRepository.AddNewOrder(name);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -42,6 +42,36 @@ namespace API.Controllers
                 return BadRequest(ex.Message);
             }
 
+        }
+        public class ChangeOrder
+        {
+            public string Userid { get; set; }
+            public double Total { get; set; }
+        }
+        [HttpPut]
+        public IActionResult PutOrder(ChangeOrder changeOrder)
+        {
+            try
+            {
+                _orderRepository.UpdateOrder(changeOrder.Userid, changeOrder.Total);
+                return Ok(changeOrder);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpPost("GetAllOrder")]
+        public IActionResult GetAllOrders([FromBody] SearchOrderRequestDTO request)
+        {
+            try
+            {
+                return Ok(_orderRepository.GetAllOrders(request));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

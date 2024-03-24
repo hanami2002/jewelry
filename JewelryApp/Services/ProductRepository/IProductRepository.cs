@@ -13,9 +13,11 @@ namespace Services.ProductRepository
         List<ProductResponeDTO> GetProductPages(string pagename,string? search, decimal? from, decimal? to, int? categoryID, int? materialID, int page = 1);
 
         //ProductVM AddProduct(Product product);
-        void DeleteProduct(int id);
-        void UpdateProduct(ProductRequestDTO product);
-        void addProduct(ProductRequestDTO product);
+       public void DeleteProduct(int id);
+        public void UpdateProduct(ProductRequestDTO product);
+        public void addProduct(ProductRequestDTO product);
+        public  ProductResponeDTO GetByid(int id);
+        ProductResponeDTO getProductById(int id);
         public List<ProductResponeDTO> GetProductPagesNew(string pagename, string? search, decimal? from, decimal? to, int? categoryID, int? materialID);
     }
 }

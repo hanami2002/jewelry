@@ -38,7 +38,22 @@ namespace Services.ProductRepository
 
             return;
         }
-
+        public ProductResponeDTO GetByid(int id)
+        {
+            var item = _context.Products.Include(p => p.Category).Include(m => m.Material).Where(x => x.ProductId == id).ToList();
+            return item.Select(x => new ProductResponeDTO
+            {
+                ProductId = x.ProductId,
+                Name = x.Name,
+                SellPrice = x.SellPrice,
+                CategoryName = x.Category.Name,
+                InStock = x.InStock,
+                Desciption = x.Desciption,
+                Detail = x.Detail,
+                ImageLink = x.ImageLink,
+                MaterialName = x.Material.Name
+            }).FirstOrDefault();
+        }
         public void DeleteProduct(int id)
         {
             var  item = _context.Products.Where(x => x.ProductId == id).FirstOrDefault();
@@ -157,6 +172,29 @@ namespace Services.ProductRepository
             Uproduct.MaterialId = product.MaterialId;
 
             _context.SaveChanges();
+        }
+        public ProductResponeDTO getProductById(int id)
+        {
+            var product = _context.Products
+                .Include(x => x.Category)
+                .Include(x => x.Material)
+                .SingleOrDefault(p => p.ProductId == id);
+            if (product == null)
+            {
+                throw new Exception();
+            }
+            return new ProductResponeDTO
+            {
+                ProductId = product.ProductId,
+                Name = product.Name,
+                SellPrice = product.SellPrice,
+                CategoryName = product.Category?.Name,
+                InStock = product.InStock,
+                Desciption = product.Desciption,
+                Detail = product.Detail,
+                MaterialName = product.Material?.Name,
+                ImageLink = product.ImageLink,
+            };
         }
     }
 }

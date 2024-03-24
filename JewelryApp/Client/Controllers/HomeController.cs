@@ -8,7 +8,8 @@ namespace Client.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public int? Id {  get; set; }
+        public int? Category {  get; set; }
+        public int? ProductId {  get; set; }
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -37,11 +38,12 @@ namespace Client.Controllers
         {
             return View();
         }
-        public IActionResult Detail(int? id)
+        public IActionResult Detail(int? ProductId)
         {
-            if(id != null)
+            if(ProductId != null)
             {
-                Id = id;
+               
+                ViewBag.ProductId = ProductId;
             }
             
             return View();
@@ -50,8 +52,13 @@ namespace Client.Controllers
         {
             return View();
         }
-        public IActionResult Shop()
+        public IActionResult Shop(int? category)
         {
+            if (category != null)
+            {
+
+                ViewBag.Category = category;
+            }
             return View();
         }
         public IActionResult Price()

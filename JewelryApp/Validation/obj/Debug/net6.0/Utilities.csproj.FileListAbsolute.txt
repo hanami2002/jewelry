@@ -10,3 +10,6 @@ D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.dll
 D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\refint\Utilities.dll
 D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.pdb
 D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\ref\Utilities.dll
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.csproj.AssemblyReference.cache
+D:\Code\C#\New folder\JewelryApp\Validation\bin\Debug\net6.0\Utilities.runtimeconfig.json
+D:\Code\C#\New folder\JewelryApp\Validation\obj\Debug\net6.0\Utilities.genruntimeconfig.cache
